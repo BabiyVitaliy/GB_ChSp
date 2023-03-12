@@ -29,4 +29,18 @@ int countThree(string[] Arr)
 }
 
 
+string[] newMassiv(string[] Arr)
+{
+    int count = 0;
+    string[] result = new string[countThree(MassivStrok)];
+    for (int i = 0; i < Arr.Length; i++)
+    {
+        if (Arr[i].Length < 4)
+        {
+            result[count] = Arr[i];
+            count++;
+        }
 
+    }
+    return result;
+}
