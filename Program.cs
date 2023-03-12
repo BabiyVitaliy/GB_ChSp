@@ -18,5 +18,15 @@ void output(string[] Arr)
     }
 }
 
+int countThree(string[] Arr)
+{
+    int result = 0;
+    for (int i = 0; i < Arr.Length; i++)
+    {
+        if (Arr[i].Length < 4) result++;
+    }
+    return result;
+}
+
 
 
